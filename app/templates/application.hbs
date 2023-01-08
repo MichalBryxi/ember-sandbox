@@ -1,3 +1,5 @@
+This is the top level form:
+
 <form  name="contact" method="POST" data-netlify="true">
   <input type="hidden" name="form-name" value="contact">
 
@@ -11,3 +13,9 @@
     <button type="submit" class="font-bold" >Send</button>
   </p>
 </form>
+
+<LinkTo @route="contact">GOTO contact</LinkTo>
+
+This is the route form:
+
+{{outlet}}
